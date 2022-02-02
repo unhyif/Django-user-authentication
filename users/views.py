@@ -25,7 +25,7 @@ def sign_up(request):
 
 def log_in(request):
     if request.method == "POST":
-        form = CustomAuthenticationForm(request, data=request.POST, label_suffix="")
+        form = LoginForm(request.POST, label_suffix="")
 
         if form.is_valid():
             username = form.cleaned_data.get("username")
@@ -38,7 +38,7 @@ def log_in(request):
 
         messages.error(request, "로그인에 실패했습니다.")
     else:
-        form = CustomAuthenticationForm(label_suffix="")
+        form = LoginForm(label_suffix="")
     return render(request, "users/log_in.html", {"form":form})
 
 
