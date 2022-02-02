@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Nanum Gothic Coding", monospace;
+  outline: none !important;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section h3 {
+  margin-bottom: 16px;
+}
+section p {
+  margin-top: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+form label {
+  margin-right: 10px;
+  color: gray;
+  font-weight: bold;
+}
+form input {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+form .errorlist {
+  text-align: right;
+  margin: 5px 0 3px 0;
+  font-size: 12px;
+  color: gray;
+}
+form button {
+  align-self: center;
+  margin-top: 14px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  width: max-content;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.alert-dismissible .btn-close {
+  position: static;
+  font-size: 25px;
+  background: inherit;
+  border: none;
+  padding: 0;
+}
